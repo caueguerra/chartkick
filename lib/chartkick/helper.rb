@@ -32,6 +32,10 @@ module Chartkick
       chartkick_chart "Timeline", data_source, options
     end
 
+    def combo_chart(data_source, options = {})
+      chartkick_chart "ComboChart", data_source, options
+    end
+
     private
 
     def chartkick_chart(klass, data_source, options, &block)
